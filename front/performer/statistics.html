@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poller+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>mngr! | Моя статистика</title>
+</head>
+
+<body class="d-flex flex-column" style="min-height: 100vh;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand poller-one" href="/">mngr!</a>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item comforta">
+                        <a class="nav-link d-flex justify-content-center" href="/">Выход</a>
+                    </li>
+                    <li id="person-button" class="nav-item comforta">
+                        <a class="nav-link d-flex justify-content-center" href="/"><img src="../images/icons/person.png"
+                                alt="Icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex flex-column align-items-center comforta" style="flex:1">
+
+        <div style="margin: 0;" class="container d-flex flex-column justify-content-between ev-null statistics" style="width: 80vw;">
+            
+            <nav class="d-flex justify-content-between align-items-center task-nav">
+                <h2 style="font-size: 1.15em;" id="task-nav-headline" class="ev-null">Моя статистика</h2>
+            </nav>
+
+            <div class="container-statistics d-flex justify-content-between align-items-center">
+                <img id="ill_first" src="../images/illust/i3.png" alt="">
+
+                <div class="d-flex flex-column">
+                    <p id="stat-head">Выполнено задач: 54</p>
+                    <p>Выполнено за день: 0</p>
+                    <p>Выполнено за неделю: 2</p>
+                    <p>Выполнено за месяц: 7</p>
+                    <p>Выполнено за год: 54</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </main>
+
+    <footer class="nav-color poller-one">
+        <div class="container d-flex flex-column align-items-center">
+            <a class="ev-null" id="logo" class="navbar-brand poller-one" href="/">mngr!</a>
+            <p class="comforta">© Все права защищены.</p>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>

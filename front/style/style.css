@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ev-null {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FONTS START */
+.poller-one {
+    font-family: "Poller One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.comforta {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+/* FONTS END  */
+
+
+/* NAV START  */
+.nav-color {
+    background-color: #E8E8E8;
+}
+
+#logo {
+    font-size: 2.5rem;
+    color: #A779ED;
+}
+
+.navbar-nav li, form input[type=submit] {
+    background: #fff;
+    border-radius: 25px;
+    padding: 2% 5%;
+    border: none;
+    min-width: 60px;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+.vw-nav {
+    width: 80vw;
+}
+
+
+/* NAV END  */
+
+/* AUTHORIZATION START */
+#auth-form {
+    border: 0.4em solid #E8E8E8;
+    border-radius: 4em;
+    padding: 2rem 2rem;
+    gap: 1.60rem;
+    margin: 2em 0 0 0;
+}
+
+form h2, #task-nav-headline {
+    background-color: #A779ED;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-size: 1.75em;
+    color: #fff;
+}
+
+#auth-form input, #auth-form select {
+    border: none;
+    background-color: #D9D9D9;
+    padding: 5% 5%;
+    border-radius: 2rem;
+    min-width: 220px;
+}
+
+#auth-form label {
+    margin: 0 0 0 7%;
+}
+
+#ill_first {
+    width: 40%;
+}
+
+@media (max-width: 1050px) {
+    #ill_first {
+        display: none;
+    }
+
+    .container-d {
+        justify-content: center;
+    }
+
+  }
+  
+  
+#person-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A779ED;
+    padding: 0;
+}
+
+#person-button a {
+    padding: 0;
+}
+
+#person-button img {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+/* AUTHORIZATION END */
+
+/* TASKS START */
+
+.task-nav {
+    margin: 2rem 0;
+
+}
+
+.container-task {
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .task-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container-task {
+        justify-content: center ;
+    }
+}
+
+.task-nav select {
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 50px;
+}
+
+
+.task, .project {
+    background-color: #EEEEEE;
+    padding: 1.25rem;
+    border-radius: 15px;
+    gap: 0.5rem;
+    /* width: 40em; */
+}
+
+.task-header {
+    gap: 1em;
+}
+
+.task textarea {
+    overflow: hidden;
+    resize: none;
+    height: auto;
+}
+
+@media (max-width:800px) {
+    .task textarea {
+        overflow: auto;
+    }
+}
+
+.task form input[type=text], .task form textarea,
+.container-project form select {
+    background-color: #a779ed3d;
+    border: none;
+    padding: 0.35rem;
+    border-radius: 10px;
+}
+
+.task-comment {
+    gap: 1rem;
+    width: fit-content;
+    padding: 0.45rem 1rem;
+    border-radius: 20px;
+    margin: 0.75rem 0;
+    background-color: #2bb3e059;
+}
+
+.task-footer {
+    gap: 1em;
+}
+
+.finish-button {
+    background-color: #A9FF8B;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.fields-task {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.5rem 0;
+}
+
+@media (max-width:800px) {
+    .task-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media (max-width:500px) {
+    .task-header {
+        flex-direction: column-reverse;
+        gap: 0.5em;
+    }
+
+    .task-header h3 {
+        display: flex;
+        order: 1;
+    }
+
+    #task-status {
+        display: flex;
+        order: -1;
+    }
+    
+}
+
+@media (min-width:1050px) {
+    .container-d {
+        justify-content: space-between;
+    }
+}
+    
+
+/* TASKS END */
+
+/* STATISTICS START */
+.statistics {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+#stat-head {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+@media (max-width:1000px) {
+    .statistics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* STATISTICS END */
+
+
+/* PROJECT START  */
+.container-project {
+    gap: 3.5em;
+}
+
+/* PROJECT END  */
+
+/* PROJECT CREATE START  */
+@media (max-width:700px) {
+    .field-date {
+        align-items: center;
+        gap: 0.5em;
+        flex-direction: column;
+    }
+}
+@media (min-width:700px) {
+    .field-date {
+        gap: 5em;
+    }
+}
+
+@media (max-width: 800px ) {
+    .proj-manager {
+        font-size: 1.75vh !important;    }
+}
+
+@media (max-width: 400px) {
+    .header-button {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+    
+.make-report {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.make-report img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 500px) {
+    .button-line {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
+/* PROJECT CREATE END  */
+
+/* REPORT CREATE START  */
+.task-report .status {
+    font-size: 0.75em;
+    color: #4e4b4b;
+}
+
+.generate-report {
+    background: #DDC8FD;
+    border-radius: 25px;
+    padding: 0.5em 0.2em;
+    border: none;
+    font-size: 0.9em;
+
+}
+/* REPORT CREATE END */
+
+/* USERS START  */
+.column-one, .column-two {
+    gap: 1em;
+}
+
+.performer {
+    background-color: #e9dbff;
+    padding: 0.25em 0.75em;
+    border-radius: 2em ;
+}
+
+.buttons img {
+    width: 80%;
+    height: 90%;
+}
+
+@media (max-width: 1050px) {
+    .users {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
+
+@media (min-width:1050px) {
+    .users {
+        align-items: start;
+    }
+}
+/* USERS END  */
+
+/* FOOTER START */
+footer {
+    margin: 3em 0 0 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+/* FOOTER END */

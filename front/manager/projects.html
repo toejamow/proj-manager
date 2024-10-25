@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poller+One&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>mngr! | Мои проекты</title>
+</head>
+
+<body class="d-flex flex-column" style="min-height: 100vh">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand poller-one" href="/">mngr!</a>
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item comforta">
+                        <a class="nav-link d-flex justify-content-center" href="/">Выход</a>
+                    </li>
+                    <li id="person-button" class="nav-item comforta">
+                        <a class="nav-link d-flex justify-content-center" href="/"><img src="../images/icons/person.png"
+                                alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex flex-column justify-content-center align-items-center comforta" style="flex: 1">
+        <div style="margin: 0" class="container d-flex flex-column justify-content-between ev-null" style="width: 80vw">
+            <nav class="d-flex justify-content-between align-items-center task-nav">
+                <h2 id="task-nav-headline" class="ev-null">Мои проекты</h2>
+                <select name="" id="">
+                    <option value="">все</option>
+                </select>
+            </nav>
+
+            <div class="container-project d-flex justify-content-center align-items-center flex-wrap">
+                    <div style="width: 38em;" class="task d-flex flex-column">
+                        <div class="task-header d-flex justify-content-between align-items-baseline m-0">
+                            <h3 style="font-size: 1.25em;font-weight: 700;" class="ev-null">Создание сайта пиццерии</h3>
+                            <p id="task-status" style="font-weight: 300;" class="ev-null">в обработке</p>
+                        </div>
+                        <div class="task-body">
+                        <form class="d-flex flex-column" action="">
+
+                            <div class="fields-task d-flex flex-column">
+                                <label for="descr">Описание</label>
+                                <textarea rows="3" oninput="autoResize(this)" name="" id="">предварительный эскиз, определяющий не только внешний вид будущего ресурса, но и то, как пользователи будут с ним взаимодействовать</textarea>
+                            </div>
+    
+                            <div class="fields-task d-flex flex-column">
+                                <label for="deadline">Срок сдачи</label>
+                                <input type="text" value="8 окт. - 12 дек.">
+                            </div>
+                            
+                            <div class="fields-task d-flex flex-column">
+                                <label for="note">Исполнители</label>
+                                <textarea rows="2" oninput="autoResize(this)" name="" id="note" >Вася Пупкин, Пупка Залупка, Иван Уфимский, Злата Ушакова, Андрей Несатый</textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="task-footer d-flex align-items-center justify-content-between">
+                        <button class="finish-button">Завершить выполнение</button>
+                    </div>
+                </div>
+
+                    <div style="width: 38em;" class="task d-flex flex-column">
+                        <div class="task-header d-flex justify-content-between align-items-baseline m-0">
+                            <h3 style="font-size: 1.25em;font-weight: 700;" class="ev-null">Создание сайта пиццерии</h3>
+                            <p id="task-status" style="font-weight: 300;" class="ev-null">в обработке</p>
+                        </div>
+                        <div class="task-body">
+                        <form class="d-flex flex-column" action="">
+
+                            <div class="fields-task d-flex flex-column">
+                                <label for="descr">Описание</label>
+                                <textarea rows="3" oninput="autoResize(this)" name="" id="">предварительный эскиз, определяющий не только внешний вид будущего ресурса, но и то, как пользователи будут с ним взаимодействовать</textarea>
+                            </div>
+    
+                            <div class="fields-task d-flex flex-column">
+                                <label for="deadline">Срок сдачи</label>
+                                <input type="text" value="8 окт. - 12 дек.">
+                            </div>
+                            
+                            <div class="fields-task d-flex flex-column">
+                                <label for="note">Исполнители</label>
+                                <textarea rows="2" oninput="autoResize(this)" name="" id="note" >Вася Пупкин, Пупка Залупка, Иван Уфимский, Злата Ушакова, Андрей Несатый</textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="task-footer d-flex align-items-center justify-content-between">
+                        <button class="finish-button">Завершить выполнение</button>
+                    </div>
+                </div>
+                    <div style="width: 38em;" class="task d-flex flex-column">
+                        <div class="task-header d-flex justify-content-between align-items-baseline m-0">
+                            <h3 style="font-size: 1.25em;font-weight: 700;" class="ev-null">Создание сайта пиццерии</h3>
+                            <p id="task-status" style="font-weight: 300;" class="ev-null">в обработке</p>
+                        </div>
+                        <div class="task-body">
+                        <form class="d-flex flex-column" action="">
+
+                            <div class="fields-task d-flex flex-column">
+                                <label for="descr">Описание</label>
+                                <textarea rows="3" oninput="autoResize(this)" name="" id="">предварительный эскиз, определяющий не только внешний вид будущего ресурса, но и то, как пользователи будут с ним взаимодействовать</textarea>
+                            </div>
+    
+                            <div class="fields-task d-flex flex-column">
+                                <label for="deadline">Срок сдачи</label>
+                                <input type="text" value="8 окт. - 12 дек.">
+                            </div>
+                            
+                            <div class="fields-task d-flex flex-column">
+                                <label for="note">Исполнители</label>
+                                <textarea rows="2" oninput="autoResize(this)" name="" id="note" >Вася Пупкин, Пупка Залупка, Иван Уфимский, Злата Ушакова, Андрей Несатый</textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="task-footer d-flex align-items-center justify-content-between">
+                        <button class="finish-button">Завершить выполнение</button>
+                    </div>
+                </div>
+                    <div style="width: 38em;" class="task d-flex flex-column">
+                        <div class="task-header d-flex justify-content-between align-items-baseline m-0">
+                            <h3 style="font-size: 1.25em;font-weight: 700;" class="ev-null">Создание сайта пиццерии</h3>
+                            <p id="task-status" style="font-weight: 300;" class="ev-null">в обработке</p>
+                        </div>
+                        <div class="task-body">
+                        <form class="d-flex flex-column" action="">
+
+                            <div class="fields-task d-flex flex-column">
+                                <label for="descr">Описание</label>
+                                <textarea rows="3" oninput="autoResize(this)" name="" id="">предварительный эскиз, определяющий не только внешний вид будущего ресурса, но и то, как пользователи будут с ним взаимодействовать</textarea>
+                            </div>
+    
+                            <div class="fields-task d-flex flex-column">
+                                <label for="deadline">Срок сдачи</label>
+                                <input type="text" value="8 окт. - 12 дек.">
+                            </div>
+                            
+                            <div class="fields-task d-flex flex-column">
+                                <label for="note">Исполнители</label>
+                                <textarea rows="2" oninput="autoResize(this)" name="" id="note" >Вася Пупкин, Пупка Залупка, Иван Уфимский, Злата Ушакова, Андрей Несатый</textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="task-footer d-flex align-items-center justify-content-between">
+                        <button class="finish-button">Завершить выполнение</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="nav-color poller-one">
+        <div class="container d-flex flex-column align-items-center">
+            <a class="ev-null" id="logo" class="navbar-brand poller-one" href="/">mngr!</a>
+            <p class="comforta">© Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+
+</body>
+
+</html>
